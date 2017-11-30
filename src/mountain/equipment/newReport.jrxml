@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="141894f9-3be0-4941-bb2c-8b9d82938cc2">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[select * from tb_barang; ]]>
+	</queryString>
+	<field name="id_cek" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="alamat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jmlCarrier" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jmlSOS" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jmlHL" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jmlTenda" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jmlHP" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jmlPakaian" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jmlRainCoat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jmlSepatu" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jmlSB" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jmlKompas" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jmlMatras" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jmlTP" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="93" splitType="Stretch">
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="419" y="0" width="136" height="20" uuid="ddb5e651-f640-404a-923a-ab4733226fb7"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="139" y="33" width="300" height="46" uuid="a3813cbe-997f-493d-951a-4f5c62ef4ed6"/>
+				<textElement textAlignment="Center">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Barang Yang Harus Dibawa]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="0" width="100" height="20" uuid="b7ac3434-563c-4ade-9350-6c9ab7184d6c"/>
+				<textFieldExpression><![CDATA[$F{id_cek}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="343" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="75" width="165" height="20" uuid="3727109d-5ecb-43f9-ad33-5c5f53ade3da"/>
+				<text><![CDATA[Jumlah Carrier		:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="95" width="165" height="20" uuid="51ab1a65-2cee-4586-bb49-f8ee43661dcb"/>
+				<text><![CDATA[Jumlah P3K		:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="115" width="165" height="20" uuid="445a387a-8732-4b21-81be-7c553c8dd275"/>
+				<text><![CDATA[Jumlah Head Lamp	:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="135" width="165" height="20" uuid="171bb261-b3ab-4316-9efe-81cfaf8f802e"/>
+				<text><![CDATA[Jumlah Tenda		:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="155" width="165" height="20" uuid="cc36c1e1-91bc-4d8b-b16f-f1866b4f9fe8"/>
+				<text><![CDATA[Jumlah Hand Phone	:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="175" width="165" height="20" uuid="c7182ce4-3195-4350-9241-676a8cbee9e7"/>
+				<text><![CDATA[Jumlah Pakaian		:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="195" width="165" height="20" uuid="e369f69f-6e5e-4979-95fe-a4b95bccfcab"/>
+				<text><![CDATA[Jumlah Jas Hujan	:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="215" width="165" height="20" uuid="f06ed09f-a95e-48ca-b003-05836f9b8384"/>
+				<text><![CDATA[Jumlah Sepatu		:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="235" width="165" height="20" uuid="f4ece01d-91ea-4fc6-9b9a-1eac8e107d8c"/>
+				<text><![CDATA[Jumlah Sleeping Bag	:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="255" width="165" height="20" uuid="283708c1-682b-41fb-baec-d4db588bfbde"/>
+				<text><![CDATA[Jumlah Kompas		:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="275" width="165" height="20" uuid="abec77f1-a022-4c08-8fdf-4dd2bb53fc53"/>
+				<text><![CDATA[Jumlah Matras		:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="295" width="165" height="20" uuid="91f687e3-472f-448d-937d-ee1d5e8734cb"/>
+				<text><![CDATA[Jumlah Trekking Pole	:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="139" y="75" width="100" height="20" uuid="14473b22-42db-4640-a27f-572a093d63a6"/>
+				<textFieldExpression><![CDATA[$F{jmlCarrier}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="139" y="95" width="100" height="20" uuid="c8e02c64-8e42-4595-ba22-30a849a7b791"/>
+				<textFieldExpression><![CDATA[$F{jmlSOS}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="139" y="115" width="100" height="20" uuid="762677a7-5157-46b2-8b1e-632cb5a2b03b"/>
+				<textFieldExpression><![CDATA[$F{jmlHL}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="139" y="135" width="100" height="20" uuid="f561ffb0-f37b-4999-aecf-37061fde5f21"/>
+				<textFieldExpression><![CDATA[$F{jmlTenda}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="139" y="155" width="100" height="20" uuid="ac840d5a-1bc7-4902-8cfd-9fa9399565d6"/>
+				<textFieldExpression><![CDATA[$F{jmlHP}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="139" y="175" width="100" height="20" uuid="ce168ce9-47d8-4935-9e21-120e91b84ab6"/>
+				<textFieldExpression><![CDATA[$F{jmlPakaian}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="139" y="195" width="100" height="20" uuid="4a300d37-c80f-468e-b089-04acd6159302"/>
+				<textFieldExpression><![CDATA[$F{jmlRainCoat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="139" y="215" width="100" height="20" uuid="04c041ce-0bf4-4951-a2db-edfa99aec7ad"/>
+				<textFieldExpression><![CDATA[$F{jmlSepatu}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="139" y="235" width="100" height="20" uuid="87844572-481e-4fdd-9ad4-69a856a9186f"/>
+				<textFieldExpression><![CDATA[$F{jmlSB}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="139" y="255" width="100" height="20" uuid="5c75d75a-33a1-4b9d-9132-27528ed05c82"/>
+				<textFieldExpression><![CDATA[$F{jmlKompas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="139" y="275" width="100" height="20" uuid="59495c5e-cd1b-4c65-889b-0f3b3263cf28"/>
+				<textFieldExpression><![CDATA[$F{jmlMatras}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="139" y="295" width="100" height="20" uuid="9d30080b-4ddc-44f6-bdfd-c9b07b610d41"/>
+				<textFieldExpression><![CDATA[$F{jmlTP}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="20" uuid="053a83d8-32e7-4708-9675-a2dc8ec1286a"/>
+				<text><![CDATA[nama]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="100" y="0" width="100" height="20" uuid="16a43e6c-803c-4896-8b20-66abd1274c2c"/>
+				<textFieldExpression><![CDATA[$F{nama}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="20" width="100" height="20" uuid="ea3816a7-1bd4-4006-add0-f14fcfc6c206"/>
+				<text><![CDATA[alamat]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="100" y="20" width="100" height="20" uuid="052a3a3e-f662-43b8-b9ff-13d9355ec597"/>
+				<textFieldExpression><![CDATA[$F{alamat}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
