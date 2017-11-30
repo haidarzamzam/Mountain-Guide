@@ -21,3 +21,6 @@ Output dari Program :
 
 3. Report Data <br>
 ![alt text](https://github.com/haidarzamzam/Mountain-Guide/blob/master/img/Screenshot_2.png)
+
+<br>
+Terima Kasih 
